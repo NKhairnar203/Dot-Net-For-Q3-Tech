@@ -1,0 +1,7 @@
+Assignment : Data Unveiled: The Architecture Behind Databases
+
+
+Que-1: 
+What does "relational" mean in the context of a relational database management system (RDBMS)?     Explain with an example.
+Ans ->
+
