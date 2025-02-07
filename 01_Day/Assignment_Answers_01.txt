@@ -2,6 +2,147 @@ Assignment : Data Unveiled: The Architecture Behind Databases
 
 
 Que-1: 
-What does "relational" mean in the context of a relational database management system (RDBMS)?     Explain with an example.
+  What does "relational" mean in the context of a relational database management system (RDBMS)?     Explain with an example.
 Ans ->
+  "relational" in Relatinal Database Management System(RDBMS) means store a data in table form(relatins) and that's in which table between relations.
+  and this is relationship establish with PRIMARY KEY(PK) and FOREIGN KEY(FK). every Table a relation. there are organized like columns(fields) and rows(records)
 
+  Example:
+    suppose we have some table like Student Table and Course Table.
+    and another is Enrollment Table that's means relational table.
+
+        Student Table:
+      ****************************************
+      *  student_Id(PK) |     Name   |   Age  *
+      *_______________________________________*
+      *     101         |  Nilesh    |  21    *
+      *     102         |   Rahul    |   23   *
+      *     103         |  Rushikesh |   23   *
+      ****************************************
+
+
+        Course Table:
+        ************************************ 
+        |   couse_Id(PK)  |    course_name  | 
+        |_________________|_________________| 
+        |      dsa_01     |        DSA      |
+        |      web_02     |        Web Dev  |     
+        |     dotNet_03   |     Dot Net Dev |   
+        ************************************ 
+
+    Enrollment - Relatinal Table:
+        *******************************************************
+        |  Enrollment_ID  | student_ID (FK) | Course_ID (FK)  | 
+        |_________________|_________________|_________________| 
+        |       1         |        102      |     web_02      |
+        |       2         |        103      |     dsa_01      |
+        |       3         |        101      |   dotNet_03     |
+        ******************************************************* 
+        this student_ID and Course_ID are FOREIGN keys. 
+
+**************************************************************************************************
+
+Que-2:  
+    Explain the role of keys in relational databases. What is the difference between a primary key and a foreign key?
+Ans: 
+    In some keys in relational databases thats play some roles:
+        1 - Identify a uniq for Data.
+        2 - Establish relationship in which between Tables.
+        3 - A maintain the Data integrity and consistency.
+
+    And difference between primary key and foreign key:
+
+    1 - Primary key
+        - It's Identify uniq for column and column's group.
+        - Not allowed duplicate value or Null Values.
+        - Every table has a only one Primary key.
+        - No depend on another table.
+        - Example: check Q 1.
+
+    2 - Foreign Key:
+        - Its depend on another table's primary key.
+        - A refer a another table primary key.
+        - Here has a dublicate values.
+        - tables could has so many foreign keys. 
+        - Example: check Q 1.
+
+*********************************************************************************************************
+
+Que-3:
+    What are the four ACID properties in databases? Explain each property with an example.
+Ans:
+    ACID is an acronym that refers to the four key properties that guarantee reliable transaction processing in databases.
+
+    These properties are:
+
+       1 - Atomicity: 
+          Ensures that a transaction is treated as a single, indivisible unit of work. Either all changes within the transaction are made, or none are made.   
+          Example: 
+            In a bank transfer, money is deducted from the sender's account and credited to the recipient's account.
+            Atomicity ensures that both operations either succeed or fail together. If the deduction succeeds but the credit fails (e.g., due to insufficient funds in the recipient's account), the deduction is also rolled back, preventing an inconsistent state. 
+
+       2 - Consistency:
+          Guarantees that a transaction maintains the database's integrity constraints. It ensures that the database remains in a valid state before and after the transaction.   
+          Example: 
+            A database might have a constraint that the balance of a bank account cannot fall below zero.
+            If a transaction attempts to withdraw more money than available, the transaction is aborted to maintain consistency.
+
+       3 - Isolation: 
+          Ensures that concurrent transactions do not interfere with each other and that each transaction appears to execute in isolation.   
+          Example: 
+            If two users try to book the same seat on a flight simultaneously, isolation ensures that only one user succeeds, preventing overbooking.
+          
+       4 - Durability: 
+          Guarantees that once a transaction is committed, the changes are permanent and survive even system failures like power outages or crashes. 
+          Example: 
+              After a successful online purchase, the order details are stored permanently in the database, even if the server crashes immediately after the transaction.
+
+**********************************************************************************************************
+
+Que - 4:
+    What are the key differences between SQL and NoSQL databases? When would you prefer to use each?
+Ans: 
+  SQL  
+    - It is Table-based (Rows and columns).
+    - Here is Fixed Schema (Pre-define Schema).
+    - Vertically scalable.
+    - SQL have strong ACID properties.
+    - Ex. MySQL, PostgreSQL, Oracle.
+
+  No SQL
+    - It's flexible database (documents, key-values).
+    - No SQL have Dynamic Schema(use can change stucture anytime).
+    - Horizontally scalable.
+    - No SQL has a CAP theorem.
+    - Ex. MongoDB, Firebase, Redis.
+
+  When the that database uses:
+      SQL-
+        sql best for structured data, strict rules and transactions.
+        you should use sql when you need a ACID properties, you want a fixed schemas, clear relationship. then you can use SQL.
+        most uses in Banking System, Online Shoping (Amazon). there are most uses SQL.
+      
+      NOSQL-
+        NoSQL best for flexible, high Scale and real-time Applications.
+        You should use No-SQL where like you need create high Scalable website. they you must be use NoSQL.
+        Its structure has very simple for using(they uses JSON, XML stucture).
+        NoSQL has agile development and fast iterations.
+        most uses in this companies - like facebook, twitter, IOT Applications.
+
+
+*******************************************************************************************************
+
+Que - 5:
+    Describe the purpose of MySQL Workbench. What are its primary features?
+Ans: 
+    A MySQL Workbench is GUI(Graphical User Interfere) tool its very powerful tool, who manage the MySQL Database. It's All-in-One for Query Execution, detabase Design and Server Management at one place. Its Cross-Platform Support like Windows, MacOS and Linux.
+
+    MySQL Workbench Have Some Primary features:
+        - SQL Development (Query Editor):
+            - Its provide interactive SQL editor there are write a Query, run Query and debug.
+            - support a Syntax highlighting and auto complete.
+        - Database Design & Modeling:
+            - There has feature for create Entity-Relationship (ER) diagrams.
+            - You can create easily Tables and Relationships with using Drag-and-drop tools.
+        - Server Administration:
+        
