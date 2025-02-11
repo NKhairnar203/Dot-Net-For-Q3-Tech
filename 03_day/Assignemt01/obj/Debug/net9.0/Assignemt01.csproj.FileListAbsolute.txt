@@ -1,0 +1,15 @@
+E:\Masai School\Dot-Net-For-Q3-Tech\03_day\Assignemt01\bin\Debug\net9.0\Assignemt01.exe
+E:\Masai School\Dot-Net-For-Q3-Tech\03_day\Assignemt01\bin\Debug\net9.0\Assignemt01.deps.json
+E:\Masai School\Dot-Net-For-Q3-Tech\03_day\Assignemt01\bin\Debug\net9.0\Assignemt01.runtimeconfig.json
+E:\Masai School\Dot-Net-For-Q3-Tech\03_day\Assignemt01\bin\Debug\net9.0\Assignemt01.dll
+E:\Masai School\Dot-Net-For-Q3-Tech\03_day\Assignemt01\bin\Debug\net9.0\Assignemt01.pdb
+E:\Masai School\Dot-Net-For-Q3-Tech\03_day\Assignemt01\obj\Debug\net9.0\Assignemt01.GeneratedMSBuildEditorConfig.editorconfig
+E:\Masai School\Dot-Net-For-Q3-Tech\03_day\Assignemt01\obj\Debug\net9.0\Assignemt01.AssemblyInfoInputs.cache
+E:\Masai School\Dot-Net-For-Q3-Tech\03_day\Assignemt01\obj\Debug\net9.0\Assignemt01.AssemblyInfo.cs
+E:\Masai School\Dot-Net-For-Q3-Tech\03_day\Assignemt01\obj\Debug\net9.0\Assignemt01.csproj.CoreCompileInputs.cache
+E:\Masai School\Dot-Net-For-Q3-Tech\03_day\Assignemt01\obj\Debug\net9.0\Assignemt01.sourcelink.json
+E:\Masai School\Dot-Net-For-Q3-Tech\03_day\Assignemt01\obj\Debug\net9.0\Assignemt01.dll
+E:\Masai School\Dot-Net-For-Q3-Tech\03_day\Assignemt01\obj\Debug\net9.0\refint\Assignemt01.dll
+E:\Masai School\Dot-Net-For-Q3-Tech\03_day\Assignemt01\obj\Debug\net9.0\Assignemt01.pdb
+E:\Masai School\Dot-Net-For-Q3-Tech\03_day\Assignemt01\obj\Debug\net9.0\Assignemt01.genruntimeconfig.cache
+E:\Masai School\Dot-Net-For-Q3-Tech\03_day\Assignemt01\obj\Debug\net9.0\ref\Assignemt01.dll
