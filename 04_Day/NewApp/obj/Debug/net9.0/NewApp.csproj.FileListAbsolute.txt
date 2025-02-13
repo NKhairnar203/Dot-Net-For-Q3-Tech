@@ -1,0 +1,15 @@
+E:\Masai School\Dot-Net-For-Q3-Tech\04_Day\NewApp\obj\Debug\net9.0\NewApp.GeneratedMSBuildEditorConfig.editorconfig
+E:\Masai School\Dot-Net-For-Q3-Tech\04_Day\NewApp\obj\Debug\net9.0\NewApp.AssemblyInfoInputs.cache
+E:\Masai School\Dot-Net-For-Q3-Tech\04_Day\NewApp\obj\Debug\net9.0\NewApp.AssemblyInfo.cs
+E:\Masai School\Dot-Net-For-Q3-Tech\04_Day\NewApp\obj\Debug\net9.0\NewApp.csproj.CoreCompileInputs.cache
+E:\Masai School\Dot-Net-For-Q3-Tech\04_Day\NewApp\obj\Debug\net9.0\NewApp.sourcelink.json
+E:\Masai School\Dot-Net-For-Q3-Tech\04_Day\NewApp\bin\Debug\net9.0\NewApp.exe
+E:\Masai School\Dot-Net-For-Q3-Tech\04_Day\NewApp\bin\Debug\net9.0\NewApp.deps.json
+E:\Masai School\Dot-Net-For-Q3-Tech\04_Day\NewApp\bin\Debug\net9.0\NewApp.runtimeconfig.json
+E:\Masai School\Dot-Net-For-Q3-Tech\04_Day\NewApp\bin\Debug\net9.0\NewApp.dll
+E:\Masai School\Dot-Net-For-Q3-Tech\04_Day\NewApp\bin\Debug\net9.0\NewApp.pdb
+E:\Masai School\Dot-Net-For-Q3-Tech\04_Day\NewApp\obj\Debug\net9.0\NewApp.dll
+E:\Masai School\Dot-Net-For-Q3-Tech\04_Day\NewApp\obj\Debug\net9.0\refint\NewApp.dll
+E:\Masai School\Dot-Net-For-Q3-Tech\04_Day\NewApp\obj\Debug\net9.0\NewApp.pdb
+E:\Masai School\Dot-Net-For-Q3-Tech\04_Day\NewApp\obj\Debug\net9.0\NewApp.genruntimeconfig.cache
+E:\Masai School\Dot-Net-For-Q3-Tech\04_Day\NewApp\obj\Debug\net9.0\ref\NewApp.dll
