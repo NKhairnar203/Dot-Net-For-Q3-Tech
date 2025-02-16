@@ -1,0 +1,7 @@
+E:\Masai School\Dot-Net-For-Q3-Tech\Assignment-4\Assignment-4\bin\Debug\Assignment-4.exe.config
+E:\Masai School\Dot-Net-For-Q3-Tech\Assignment-4\Assignment-4\bin\Debug\Assignment-4.exe
+E:\Masai School\Dot-Net-For-Q3-Tech\Assignment-4\Assignment-4\bin\Debug\Assignment-4.pdb
+E:\Masai School\Dot-Net-For-Q3-Tech\Assignment-4\Assignment-4\obj\Debug\Assignment-4.csproj.AssemblyReference.cache
+E:\Masai School\Dot-Net-For-Q3-Tech\Assignment-4\Assignment-4\obj\Debug\Assignment-4.csproj.CoreCompileInputs.cache
+E:\Masai School\Dot-Net-For-Q3-Tech\Assignment-4\Assignment-4\obj\Debug\Assignment-4.exe
+E:\Masai School\Dot-Net-For-Q3-Tech\Assignment-4\Assignment-4\obj\Debug\Assignment-4.pdb
