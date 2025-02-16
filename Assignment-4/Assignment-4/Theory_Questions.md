@@ -158,7 +158,7 @@
   Solution: Use a for loop instead.
 
   `for (int i = 0; i < numbers.Length; i++)
-    {
-        numbers[i] = numbers[i] * 2;  // Works fine
-    }
-    `
+  {
+      numbers[i] = numbers[i] * 2;  // Works fine
+  }
+  `
