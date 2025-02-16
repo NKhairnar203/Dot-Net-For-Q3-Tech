@@ -86,12 +86,13 @@
   - Syntax - `do { code } while (condition);`
 
   ### Example of `do-while`:
-  ` int i = 1;
-    do
-    {
-        Console.WriteLine("Iteration: " + i);
-        i++;
-    } while (i <= 5);`
+  `int i = 1;
+  do
+  {
+      Console.WriteLine("Iteration: " + i);
+      i++;
+  } while (i <= 5);
+  `
 
     Even if `i` starts with `10`, the loop will execute at least once.
 
@@ -118,19 +119,19 @@
 **Ans:** The foreach loop is used to iterate over collections like arrays or lists without using an index.
   **Syntax:**
   `foreach (datatype item in collection)
-    {
-        // Code to execute
-    }
-    `
+  {
+      // Code to execute
+  }
+  `
 
   **Example:**
-  ` string[] fruits = { "Apple", "Banana", "Cherry" };
+  `string[] fruits = { "Apple", "Banana", "Cherry" };
 
-    foreach (string fruit in fruits)
-    {
-        Console.WriteLine(fruit);
-    }
-    `
+  foreach (string fruit in fruits)
+  {
+      Console.WriteLine(fruit);
+  }
+  `
 
    **Output:**
    `Apple  
@@ -162,3 +163,228 @@
       numbers[i] = numbers[i] * 2;  // Works fine
   }
   `
+
+
+# **Section 2: Intermediate Questions**
+
+## **What is an infinite loop? Provide examples using for, while, and do-while.**
+Ans: 
+  An infinite loop is a loop that never stops because its condition always evaluates to true.
+**Example Using for Loop:**
+`for (;;)
+{
+    Console.WriteLine("This is an infinite loop.");
+}
+`
+Explanation: Since there is no condition, the loop runs indefinitely.
+
+**Example Using while Loop:**
+`while (true)
+{
+    Console.WriteLine("This is an infinite loop.");
+}
+`
+Explanation: true is always true, so the loop never exits.
+
+**Example Using do-while Loop:**
+`do
+{
+    Console.WriteLine("This is an infinite loop.");
+} while (true);
+`
+Explanation: The do-while executes once and then checks true, so it keeps running.
+- To break an infinite loop, use break, return, or Ctrl+C (in console apps).
+
+
+
+## **How does the break statement work inside loops?**
+**Ans**
+The break statement terminates a loop immediately and exits its execution.
+**Example: Breaking Out of a for Loop**
+`for (int i = 1; i <= 5; i++)
+{
+    if (i == 3)
+    {
+        break;  // Exits the loop when i == 3
+    }
+    Console.WriteLine("Iteration: " + i);
+}`
+**Output:**
+`Iteration: 1  
+Iteration: 2`
+
+The loop stops at 3, and 4,5 are never printed.
+
+**Example: Breaking Out of a while Loop**
+`int x = 1;
+while (x <= 5)
+{
+    if (x == 3)
+    {
+        break;  // Exits the loop
+    }
+    Console.WriteLine("Value: " + x);
+    x++;
+}
+`
+**Output:**
+`Value: 1  
+Value: 2`
+
+
+
+## **What is the role of the continue statement in loops?**
+**Ans:**
+The `continue` statement skips the current iteration and moves to the next iteration.
+**Example: Skipping an Iteration**
+`for (int i = 1; i <= 5; i++)
+{
+    if (i == 3)
+    {
+        continue;  // Skips printing when i == 3
+    }
+    Console.WriteLine("Iteration: " + i);
+}
+`
+**Output**
+`Iteration: 1  
+Iteration: 2  
+Iteration: 4  
+Iteration: 5 ` 
+
+ The loop skips `3` and continues with `4`.
+
+
+## **How can you exit multiple nested loops at once?**
+**Ans:**
+To exit multiple nested loops, use a labeled break statement.
+**Example: Using Labeled `break`**
+`outerLoop:
+for (int i = 1; i <= 3; i++)
+{
+    for (int j = 1; j <= 3; j++)
+    {
+        if (i == 2 && j == 2)
+        {
+            break outerLoop;  // Exits both loops
+        }
+        Console.WriteLine($"i={i}, j={j}");
+    }
+}
+`
+**Output:**
+`i=1, j=1  
+i=1, j=2  
+i=1, j=3  
+i=2, j=1  
+`
+When `i=2`, `j=2`, the break outerLoop; exits both loops.
+
+
+## **What is the difference between break and return inside a loop?**
+**Ans:**
+**break**
+- Exits only the loop
+- Used inside loops & `switch`
+- Execution continues after the loop
+
+**return**
+- Exits the entire method
+- Used to return a value from a function
+- Execution stops immediately
+
+**Example of break:**
+`for (int i = 1; i <= 5; i++)
+{
+    if (i == 3)
+    {
+        break;  // Exits the loop
+    }
+    Console.WriteLine(i);
+}
+Console.WriteLine("Loop finished.");
+`
+**ouput**
+`1  
+2  
+Loop finished.
+`
+
+**Example of return:**
+`void TestMethod()
+{
+    for (int i = 1; i <= 5; i++)
+    {
+        if (i == 3)
+        {
+            return;  // Exits the method
+        }
+        Console.WriteLine(i);
+    }
+    Console.WriteLine("Loop finished.");
+}
+
+TestMethod();
+Console.WriteLine("Method finished.");
+`
+**Output:**
+`1  
+2  
+Method finished.
+`
+`return;` exits the entire method and does not print `"Loop finished."`
+
+
+## **How do you iterate through an array using loops?**
+**Ans:**
+You can use for, while, or foreach to iterate through an array.
+**Using `for` Loop**
+`int[] arr = { 10, 20, 30, 40 };
+
+for (int i = 0; i < arr.Length; i++)
+{
+    Console.WriteLine(arr[i]);
+}
+`
+**Using `foreach` Loop**:
+`foreach (int num in arr)
+{
+    Console.WriteLine(num);
+}
+`
+
+
+## **Write a C# program to find the largest and smallest number in an array using loops.**
+**Ans:**
+`using System;
+class Program
+{
+    static void Main()
+    {
+        int[] arr = { 10, 25, 8, 36, 45, 2 };
+
+        int min = arr[0];  // Assume first element is the smallest
+        int max = arr[0];  // Assume first element is the largest
+
+        for (int i = 1; i < arr.Length; i++)
+        {
+            if (arr[i] < min)
+            {
+                min = arr[i];  // Update min if a smaller value is found
+            }
+            if (arr[i] > max)
+            {
+                max = arr[i];  // Update max if a larger value is found
+            }
+        }
+
+        Console.WriteLine("Smallest: " + min);
+        Console.WriteLine("Largest: " + max);
+    }
+}
+`
+**Output**
+`Smallest: 2  
+Largest: 45  
+`
+
